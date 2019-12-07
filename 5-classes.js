@@ -56,6 +56,7 @@ var Cat = /** @class */ (function (_super) {
     return Cat;
 }(Animal));
 var cat = new Cat();
+cat.setVoice('Hello');
 /** Abstract class */
 var Component = /** @class */ (function () {
     function Component() {

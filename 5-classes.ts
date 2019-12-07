@@ -30,11 +30,11 @@ class Animal {
   }
 }
 class Cat extends Animal {
-  public setVoice(voice: string): void {
-    this.voice = voice;
-  }
+  // public setVoice(voice: string): void {
+  //   this.voice = voice;
+  // }
 }
-const cat = new Cat();
+// const cat = new Cat();
 
 
 /** Abstract class */

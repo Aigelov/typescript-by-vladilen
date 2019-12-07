@@ -13,8 +13,8 @@ type User = {
   email: string;
   createdAt: Date;
 };
-type UserKeysNoMeta1 = Exclude<keyof User, '_id' | 'createdAt'>; // 'name' | 'email'
+// type UserKeysNoMeta1 = Exclude<keyof User, '_id' | 'createdAt'>; // 'name' | 'email'
 type UserKeysNoMeta2 = Pick<User, 'name' | 'email'>;
-let u1: UserKeysNoMeta1 = 'name';
-u1 = 'email';
-console.log(u1);
+// let u1: UserKeysNoMeta1 = 'name';
+// u1 = 'email';
+// console.log(u1);

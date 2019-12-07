@@ -32,3 +32,23 @@ var css = {
     marginTop: '2px',
     borderRadius: '5px'
 };
+var user = {
+    name: 'Vladilen',
+    age: 25,
+    logInfo: function () {
+        console.log(this.name + " " + this.age);
+    }
+};
+var User2 = /** @class */ (function () {
+    function User2(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    User2.prototype.sayHello = function () {
+        console.log(this.name + " Hello!");
+    };
+    return User2;
+}());
+var user2 = new User2('Vladilen', 26);
+console.log(user2);
+user2.sayHello();

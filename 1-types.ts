@@ -19,7 +19,7 @@ const contact: [string, number, any] = [
   1234567,
   {name: 'Galym', age: 31}
 ];
-console.log(contact);
+// console.log(contact);
 
 
 /** Any */
@@ -32,7 +32,13 @@ variable = [];
 function sayMyName(name: string): void {
   console.log(name);
 }
-sayMyName('Haizenberg');
+// sayMyName('Haizenberg');
+
+function calc(a: number, b: number | string): number {
+  if (typeof b === 'string') b = +b;
+  return a + b;
+}
+console.log(calc(5, 10));
 
 
 /** Never */

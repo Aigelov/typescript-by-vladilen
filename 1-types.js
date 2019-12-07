@@ -8,16 +8,27 @@ var arrNum = [1, 2, 3, 4, 5];
 var arrNum2 = [1, 2, 3, 4, 5];
 var words = ['Hello', 'Typescript'];
 /** Tuple */
-var contact = ['Vladilen', 1234567];
+var contact = [
+    'Vladilen',
+    1234567,
+    { name: 'Galym', age: 31 }
+];
+// console.log(contact);
 /** Any */
 var variable = 42;
 variable = 'New string';
 variable = [];
 /** Function */
 function sayMyName(name) {
-    console.log(name);
+    return name;
 }
-sayMyName('Haizenberg');
+// console.log(sayMyName('Haizenberg'));
+function calc(a, b) {
+    if (typeof b === 'string')
+        b = +b;
+    return a + b;
+}
+console.log(calc(5, 'f'));
 /** Never */
 function throwError(message) {
     throw new Error(message);

@@ -55,3 +55,40 @@ const css: Styles = {
   marginTop: '2px',
   borderRadius: '5px'
 };
+
+
+// =============================
+interface UserInterface {
+  name: string;
+  age: number;
+  logInfo: () => void;
+  id?: any
+}
+const user: UserInterface = {
+  name: 'Vladilen',
+  age: 25,
+  logInfo() {
+    console.log(`${this.name} ${this.age}`);
+  }
+};
+// console.log(user);
+
+
+// =============================
+interface SayHello {
+  sayHello: () => void;
+}
+
+class User2 implements SayHello {
+  constructor(
+    private name: string,
+    private age: number
+  ) {}
+
+  sayHello() {
+    console.log(`${this.name} Hello!`);
+  }
+}
+const user2 = new User2('Vladilen', 26);
+console.log(user2);
+user2.sayHello();
