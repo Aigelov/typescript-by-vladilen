@@ -12,11 +12,13 @@ interface User {
   age: number;
 }
 
+// noinspection TypeScriptValidateTypes
 const users: Array<User> = [
   {id: 1, name: 'V', age: 22},
   {id: 2, name: 'E', age: 23}
 ];
 
+// noinspection TypeScriptValidateTypes
 const users2: User[] = [
   {id: 1, name: 'V', age: 22},
   {id: 2, name: 'E', age: 23}
